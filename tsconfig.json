@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "jsx": "preserve",                             
+    "module": "commonjs",
+    "baseUrl": "./src",                               
+    "allowJs": true,                               
+    "sourceMap": true,                             
+    "noEmit": true,                                
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true
+  }
+}
