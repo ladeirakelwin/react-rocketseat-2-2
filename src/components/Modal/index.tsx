@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { Component, ReactNode, useState } from 'react';
+import { ReactNode, useState } from 'react';
 import ReactModal from 'react-modal';
 
 interface Props {
@@ -16,13 +16,13 @@ export default function Modal({ children, setIsOpen, isOpen }: Props) {
 		if (prevProps !== isOpen) {
 			setModalStatus(isOpen);
 		}
-	}, [isOpen]);
+	}, [isOpen, prevProps]);
 
 	function usePrevious<T>(value: T): T | undefined {
 		const ref = useRef<T>();
 		useEffect(() => {
 			ref.current = value;
-		});
+		},[value]);
 		return ref.current;
 	}
 

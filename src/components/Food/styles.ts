@@ -1,6 +1,4 @@
 import styled, { css } from 'styled-components';
-import { boolean } from 'yup';
-
 interface Props {
   available: boolean;
 }
